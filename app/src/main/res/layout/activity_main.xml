@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.mikebie.usbinfoviewer.MainActivity"
+    tools:ignore="MergeRootFrame">
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UsbInfoViewer v1.0" />
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic"
+        android:text="Refresh List"
+        />
+    <TextView
+        android:id="@+id/infoContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRefresh"
+        android:text="No device connected!"/>
+</RelativeLayout>
